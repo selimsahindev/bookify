@@ -75,11 +75,9 @@ async function renderNewPage(res, book, errorMessage = null) {
 }
 
 function saveCover(book, coverEncoded) {
-    console.log('saveCover check 1');
     if (coverEncoded == null) {
         return;
     }
-    console.log('saveCover check 2');
 
     const cover = JSON.parse(coverEncoded);
 
@@ -88,7 +86,6 @@ function saveCover(book, coverEncoded) {
         book.coverImageType = cover.type;
         console.log('properties added to book object');
     }
-    console.log('saveCover check 3');
 }
 
 module.exports = router;
