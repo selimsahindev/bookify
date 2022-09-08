@@ -10,5 +10,5 @@
     <a href="/authors/<%= author.id %>">View</a>
     <a href="/authors/<%= author.id %>/edit">Edit</a>
     <!-- <%- include('./edit.ejs', { author: author }) %>  -->
-    <%- include('../partials/deleteForm.ejs', { url: `/authors/${author.id}?_method=DELETE` }) %>
+    <%- include('../partials/deleteForm.ejs', { url: `/authors/${author.id}` }) %>
 <% }) %> 
